@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false, //! TMP CHANGE //? maybe reconsider this
+    "noImplicitOverride": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": true, //? maybe reconsider this
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true, //? same as kotlin, lets try with this true
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "allowUmdGlobalAccess": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "src/*"]
+    },
+    // "rootDir": ".",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "downlevelIteration": true,
+    "importsNotUsedAsValues": "remove",
+    "newLine": "CRLF",
+    "noEmit": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "stripInternal": true,
+    "allowJs": true,
+    "plugins": [
+      // maybe use https://github.com/Microsoft/typescript-styled-plugin
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitUseStrict": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"],
+    "noLib": false,
+    "useDefineForClassFields": true,
+    "moduleSuffixes": [".ts", ".tsx", ".js", ".jsx", ".scss", ".m.scss", ".css", ".json", ".json5", ".tr.json5", ""],
+
+    //* Projects omitted
+    //* Output Formatting omitted
+  },
+  "include": ["src"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "ES2020",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node"
+    },
+  },
+}

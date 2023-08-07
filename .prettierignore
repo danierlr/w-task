@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+.idea
+.editorconfig
+pnpm-lock.yaml
+package-lock.json
+.npmrc
+.vscode
+
+# Ignored suffix
+*.log
+*.md
+*.svg
+*.png
+*.ico
+*ignore
+
+# Local
+.husky
+
+# Built-files
+.cache
+
+# project specific
+dist
+node_modules

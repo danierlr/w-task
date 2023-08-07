@@ -26,14 +26,14 @@ const compiler = webpack(config, (error, stats) => {
   }
 })
 
-if(envMode === 'watch') {
+if (envMode === 'watch') {
   const devServerOptions = { ...(config as any).devServer }
   const server = new webpackDevServer(devServerOptions, compiler)
-  
+
   const runServer = async () => {
     console.log('Starting server...')
     await server.start()
   }
-  
+
   runServer()
 }

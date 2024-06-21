@@ -1,5 +1,5 @@
 # Requirements
-node v18.15.0+
+node version should be exactly **18.15.0**. Previous versions may not work, older versions have a breaking change relating module resolution.
 
 # How to run
 do the following:
